@@ -36,3 +36,16 @@ I think there is a decent foundation where you could specify capabilities of you
 - [ ] particle variables
 - [ ] control groups  
 - [ ] control types
+
+## Documentation
+particleDevices is an array of objects, accessing an object as you do an array `particleDevices[0]` the main properties are `room, deviceID, color` the color is another object that has `power, new, rgb[], web, single24` and the `update` method. Everything is stored in the main room variable i.e. particleDevices[rm#]. Example:   
+```javascript
+particleDevices[0].room     = "Bedroom"
+particleDevices[0].deviceID = "222keep333private444"
+particleDevices[0].color    = { power:true ... } // the entire color object see below or log
+particleDevices[0].color.power = true // Boolean on/off
+particleDevices[0].color.new    = true // acts as a flag to tell there is a new color to post
+particleDevices[0].color.rgb[1] = 155 // the green component
+particleDevices[0].color.web    = "#88F27C" // the web hex color value
+particleDevices[0].color.single24 = 10531008 // also = 0xA0B0C0 or A0/160 red, B0/176 blue, C0/192 green
+particleDevices[0].color.update = true // takes nothing but set to update all the other representations of the color```
