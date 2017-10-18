@@ -6,7 +6,7 @@ This is a an example of single page app changing the color of the on board RGB L
 It uses [jQuery](https://github.com/jquery/jquery) to make a POSTing simple.
 
 ## Used in the Particle code:
-7 new lines, copy-paste the .ino into a new application in the Particle IDE  
+8 new lines, copy-paste the .ino into a new application in the Particle IDE  
 [Particle Function](https://docs.particle.io/reference/firmware/photon/#particle-function-)  
 
 The Adafruit library can use a 24bit number to control LED color.  
@@ -34,8 +34,10 @@ I think there is a decent foundation where you could specify capabilities of you
 
 ### Future work
 - [ ] particle variables
+- [ ] update state from device
 - [ ] control groups  
 - [ ] control types
+- [ ] storage of data on the site
 
 ## Documentation
 particleDevices is an array of objects, accessing an object as you do an array `particleDevices[0]` the main properties are `room, deviceID, color` the color is another object that has `power, new, rgb[], web, single24` and the `update` method. Everything is stored in the main room variable i.e. particleDevices[rm#]. Example:   
