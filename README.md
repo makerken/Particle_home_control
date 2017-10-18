@@ -34,8 +34,9 @@ I think there is a decent foundation where you could specify capabilities of you
 
 ### Future work
 - [ ] particle variables
+- [ ] LED strip patterns
 - [ ] update state from device
-- [ ] control groups  
+- [ ] control groups
 - [ ] control types
 - [ ] storage of data on the site
 
