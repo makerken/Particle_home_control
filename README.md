@@ -21,6 +21,8 @@ So we can pass an int as a string and [`toInt()`](https://docs.particle.io/refer
 
 Color accuracy is bad on the Photons. Controlling LED strip lights is much better.
 
+The Particle web function is currently coded to expect `rbg`.
+
 ## The web app
 save the .html file and right-click > edit and you only have to enter your:
 - Access Token (keep private)
