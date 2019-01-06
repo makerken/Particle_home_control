@@ -1,6 +1,6 @@
 # Particle_home_control
 
-This is under active development, any contributions or bug reports welcome.
+This is an exercise in keeping things simple.
 
 This is a an example of single page app changing the color of the on board RGB LED  
 It uses [jQuery](https://github.com/jquery/jquery) to make a POSTing simple.
